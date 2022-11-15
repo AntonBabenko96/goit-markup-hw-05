@@ -685,10 +685,9 @@ button {
     position: absolute;
     top: 14px;
     right: 14px;
-
     width: 31px;
     height: 31px;
-    padding: 0;
+    padding: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
