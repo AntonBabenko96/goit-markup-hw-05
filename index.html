@@ -23,9 +23,9 @@
         <nav class="head-nav">
           <a href="./index.html" class="logo">Web<span>Studio</span></a>
           <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="item"><a href="#contacts" class="link">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="nav-link current link">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
+            <li class="item"><a href="#contacts" class="nav-link link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="info-link">
@@ -45,7 +45,7 @@
       <section class="hero">
         <div class="container">
           <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button class="btn" type="button" class="button">Замовити послугу</button>
+          <button class="btn" type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section main">
@@ -85,13 +85,22 @@
             <h2>Чим ми займаємося</h2>
             <ul class="working-list">
               <li class="working-item">
-                <img src="./images/box1.jpg" alt="Працюємо на ПК" width="370" />
+                <div class="working-thumb">
+                  <img src="./images/box1.jpg" alt="Працюємо на ПК" width="370" />
+                  <p class="working-txt">ДЕСКТОПНІ ДОДАТКИ</p>
+                </div>
               </li>
               <li class="working-item">
-                <img src="./images/box2.jpg" alt="Працюємо на планшеті" width="370" />
+                <div class="working-thumb">
+                  <img src="./images/box2.jpg" alt="Працюємо на планшеті" width="370" />
+                  <p class="working-txt">МОБІЛЬНІ ДОДАТКИ</p>
+                </div>
               </li>
               <li class="working-item">
-                <img src="./images/box3.jpg" alt="Працюємо на смартфоні" width="370" />
+                <div class="working-thumb">
+                  <img src="./images/box3.jpg" alt="Працюємо на смартфоні" width="370" />
+                  <p class="working-txt">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                </div>
               </li>
             </ul></div>
         </div>
@@ -340,5 +349,17 @@
       </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
